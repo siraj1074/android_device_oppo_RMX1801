@@ -101,6 +101,7 @@ PRODUCT_BOOT_JARS += \
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config.extra=none \
     persist.sys.usb.config=mtp,adb
 
 # Wifi display
