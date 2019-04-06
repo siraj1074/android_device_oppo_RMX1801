@@ -1,6 +1,6 @@
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap
-persist.camera.HAL3.enable=1
+persist.camera.HAL3.enabled=1
 
 # CNE
 persist.cne.feature=1
