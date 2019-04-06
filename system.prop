@@ -41,5 +41,11 @@ DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,20
 telephony.lteOnCdmaDevice=1
-persist.radio.atfwd.start=true
 	
+# Wifi display
+persist.debug.wfd.enable=1
+persist.debug.coresight.config=stm-events
+persist.sys.wfd.virtual=0
+persist.hwc.enable_vds=1
+persist.radio.atfwd.start=true
+
