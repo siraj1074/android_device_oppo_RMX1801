@@ -31,13 +31,7 @@ PRODUCT_PACKAGES += \
     init.oppo.rc \
     init.oppo.reserve.rc \
     init.recovery.qcom.rc
-
-# Display post-processing
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qcom.ad=1 \
-    ro.qcom.ad.sensortype=2 \
-    ro.qcom.ad.calib.data=/vendor/etc/OPPO_OLED_AD_calib.cfg
-
+	
 # Doze
 PRODUCT_PACKAGES += \
     OppoDoze
@@ -45,16 +39,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/vendor.oppo.hardware.fingerprint.xml:system/etc/permissions/vendor.oppo.hardware.fingerprint.xml
-
-# Graphics
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
-    debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
-    debug.gralloc.enable_fb_ubwc=1 \
-    dev.pm.dyn_samplingrate=1 \
-    persist.demo.hdmirotationlock=false \
-    debug.sf.recomputecrop=0
 
 # HIDL
 PRODUCT_COPY_FILES += \
@@ -94,11 +78,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 endif
-
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.core_ctl_max_cpu=4
 
 # Power
 PRODUCT_PACKAGES += \
