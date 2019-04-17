@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",0
+    "branch": "lineage-15.1",
+    "remote": "github"
+  }
+]
