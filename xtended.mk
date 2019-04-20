@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/oppo/RMX1801/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -35,7 +35,7 @@ TARGET_SCREEN_HEIGHT := 2340
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1801
-PRODUCT_NAME := lineage_RMX1801
+PRODUCT_NAME := xtended_RMX1801
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := Realme 2 Pro
 PRODUCT_MANUFACTURER := Oppo
